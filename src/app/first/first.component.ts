@@ -9,7 +9,7 @@ export class FirstComponent implements OnInit {
   color = 'blue';
   isHidden = false;
   constructor() {}
-
+  message = '';
   ngOnInit(): void {}
   sayHello() {
     console.log('Hello Orsys');
@@ -22,5 +22,10 @@ export class FirstComponent implements OnInit {
     } */
     console.log(this.isHidden);
     this.isHidden = !this.isHidden;
+  }
+
+  showParagraphe(inputContent: string) {
+    //console.log(inputContent);
+    this.message = inputContent;
   }
 }

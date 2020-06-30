@@ -11,5 +11,11 @@
   [style.color]="color">
   Ma couleur favorite est {{color}}
 </div>
-<input type="text">
+<p (mouseenter)="showParagraphe(monInput.value)">
+  Tu as écris ce message : {{message}}
+</p>
+<input
+ type="text"
+ #monInput
+ >
 <app-second></app-second>
