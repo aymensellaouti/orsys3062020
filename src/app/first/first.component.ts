@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./first.component.css'],
 })
 export class FirstComponent implements OnInit {
-  color = 'red';
+  color = 'blue';
   isHidden = false;
   constructor() {}
 
@@ -15,7 +15,7 @@ export class FirstComponent implements OnInit {
     console.log('Hello Orsys');
   }
   afficherCacher() {
-/*     if(this.isHidden) {
+    /*     if(this.isHidden) {
       this.isHidden = false;
     } else {
       this.isHidden = true;
