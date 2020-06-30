@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "orsysAngular2962020"
+    }
+  },
+  "defaultProject": "orsysAngular2962020",
+  "cli": {
+    "analytics": "0cde9216-2358-4f3b-a1b7-7ca5caeb1f2b"
+  }
 }

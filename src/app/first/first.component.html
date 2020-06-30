@@ -1,0 +1,15 @@
+<p
+  (click)="sayHello()"
+>first works!</p>
+<button
+  (click)="afficherCacher()"
+  class="btn btn-primary">
+  afficher/cacher
+</button>
+<div
+  [hidden]="isHidden"
+  [style.color]="color">
+  Ma couleur favorite est {{color}}
+</div>
+<input type="text">
+<app-second></app-second>
