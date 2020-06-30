@@ -1,0 +1,13 @@
+
+<p
+  (click)="changeColor()"
+  [style.backgroundColor]="bgc"
+>
+  Welcome {{name}}
+</p>
+<button
+  (click)="logColor(champTexte.value)"
+  class="btn-danger btn">
+  Affiche Couleur
+</button>
+<input type="text" #champTexte>
