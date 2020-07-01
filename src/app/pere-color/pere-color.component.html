@@ -1,0 +1,19 @@
+<p [style.backgroundColor]="color">pere-color works!</p>
+
+<app-fils-color (sendMyFavoriteColor)="changeColor($event)">
+</app-fils-color>
+  <app-fils-color
+    [favoriteColor]="'yellow'"
+    (sendMyFavoriteColor)="changeColor($event)"
+  ></app-fils-color>
+
+  <app-fils-color
+      [favoriteColor]="'silver'"
+      (sendMyFavoriteColor)="changeColor($event)"
+    ></app-fils-color>
+
+      <app-fils-color
+        [favoriteColor]="'lightblue'"
+        (sendMyFavoriteColor)="changeColor($event)"
+      >
+      </app-fils-color>

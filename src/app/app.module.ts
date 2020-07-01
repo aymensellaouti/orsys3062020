@@ -17,8 +17,14 @@ import { DadComponent } from './dad/dad.component';
 import { SonComponent } from './son/son.component';
 import { PereOutputComponent } from './pere-output/pere-output.component';
 import { FilsOutputComponent } from './fils-output/fils-output.component';
+import { PereColorComponent } from './pere-color/pere-color.component';
+import { FilsColorComponent } from './fils-color/fils-color.component';
+import { CvComponent } from './cv/cv/cv.component';
+import { ItemComponent } from './cv/item/item.component';
+import { ListComponent } from './cv/list/list.component';
+import { DetailComponent } from './cv/detail/detail.component';
 @NgModule({
-  declarations: [AppComponent, FirstComponent, SecondComponent, ColorComponent, AstridComponent, TwoWayComponent, CardComponent, FilsComponent, PereComponent, Debrief1Component, DadComponent, SonComponent, PereOutputComponent, FilsOutputComponent],
+  declarations: [AppComponent, FirstComponent, SecondComponent, ColorComponent, AstridComponent, TwoWayComponent, CardComponent, FilsComponent, PereComponent, Debrief1Component, DadComponent, SonComponent, PereOutputComponent, FilsOutputComponent, PereColorComponent, FilsColorComponent, CvComponent, ItemComponent, ListComponent, DetailComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
