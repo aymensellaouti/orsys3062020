@@ -1,0 +1,8 @@
+.lampe {
+  width: 150px;
+  height: 150px;
+  border: 2px black solid;
+  background-color: yellow;
+  color: black;
+  padding: 50px;
+}

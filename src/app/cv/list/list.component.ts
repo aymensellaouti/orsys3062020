@@ -9,6 +9,7 @@ import { Personne } from './../Model/personne';
 export class ListComponent implements OnInit {
   personnes: Personne[];
   constructor() {}
+  //Je crée un événement
   @Output() forwardSelectedPersonne = new EventEmitter();
 
   ngOnInit(): void {

@@ -8,12 +8,13 @@ import { Personne } from './../Model/personne';
 })
 export class ItemComponent implements OnInit {
   @Input() personne: Personne;
+  //on créer un event emmiter qui va emmetre la personne se trouvant dans l'item
   @Output() selectPersonne = new EventEmitter();
   constructor() {}
 
   ngOnInit(): void {}
+  // Lorsqu'on appelle cette méthode on emte l evenet incluant la personne
   sendSelectedPersonne() {
-    console.log('the selected personne is ', this.personne);
     this.selectPersonne.emit(this.personne);
   }
 }

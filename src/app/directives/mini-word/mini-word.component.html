@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col">
+    <input
+    [(ngModel)]="color"
+    type="color" class="form-control">
+  </div>
+  <div class="col">
+    <input
+     [(ngModel)]="size"
+     type="number" class="form-control">
+  </div>
+  <div class="col">
+    <select
+     [(ngModel)]="font"
+     class="form-control">
+      <option value="garamond">Garamond</option>
+      <option value="verdana">Verdana</option>
+      <option value="Times New Roman">Times New Roman</option>
+    </select>
+  </div>
+</div>
+<p
+ [ngStyle]="{
+   'color': color,
+   'fontSize': size + 'px',
+   'fontFamily': font
+ }"
+>mini-word works!</p>

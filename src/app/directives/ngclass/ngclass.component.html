@@ -1,0 +1,17 @@
+<p
+  [inColor]="'red'" [outColor]="'gold'"
+  appHighlight>ngclass works!</p>
+
+<div
+  appHighlight
+  [inColor]="'lightblue'"
+  [outColor]="'purple'"
+  (click)="allumer()"
+  [ngClass]="{
+    lampe: isAllume
+  }"
+>
+  Lampe
+</div>
+
+<input type="text">

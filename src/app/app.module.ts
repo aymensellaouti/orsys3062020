@@ -23,8 +23,12 @@ import { CvComponent } from './cv/cv/cv.component';
 import { ItemComponent } from './cv/item/item.component';
 import { ListComponent } from './cv/list/list.component';
 import { DetailComponent } from './cv/detail/detail.component';
+import { NgsComponent } from './directives/ngs/ngs.component';
+import { MiniWordComponent } from './directives/mini-word/mini-word.component';
+import { NgclassComponent } from './directives/ngclass/ngclass.component';
+import { HighlightDirective } from './directives/highlight.directive';
 @NgModule({
-  declarations: [AppComponent, FirstComponent, SecondComponent, ColorComponent, AstridComponent, TwoWayComponent, CardComponent, FilsComponent, PereComponent, Debrief1Component, DadComponent, SonComponent, PereOutputComponent, FilsOutputComponent, PereColorComponent, FilsColorComponent, CvComponent, ItemComponent, ListComponent, DetailComponent],
+  declarations: [AppComponent, FirstComponent, SecondComponent, ColorComponent, AstridComponent, TwoWayComponent, CardComponent, FilsComponent, PereComponent, Debrief1Component, DadComponent, SonComponent, PereOutputComponent, FilsOutputComponent, PereColorComponent, FilsColorComponent, CvComponent, ItemComponent, ListComponent, DetailComponent, NgsComponent, MiniWordComponent, NgclassComponent, HighlightDirective],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
