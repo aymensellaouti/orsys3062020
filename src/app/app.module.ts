@@ -12,8 +12,13 @@ import {FormsModule} from '@angular/forms';
 import { CardComponent } from './card/card.component';
 import { FilsComponent } from './fils/fils.component';
 import { PereComponent } from './pere/pere.component';
+import { Debrief1Component } from './debrief1/debrief1.component';
+import { DadComponent } from './dad/dad.component';
+import { SonComponent } from './son/son.component';
+import { PereOutputComponent } from './pere-output/pere-output.component';
+import { FilsOutputComponent } from './fils-output/fils-output.component';
 @NgModule({
-  declarations: [AppComponent, FirstComponent, SecondComponent, ColorComponent, AstridComponent, TwoWayComponent, CardComponent, FilsComponent, PereComponent],
+  declarations: [AppComponent, FirstComponent, SecondComponent, ColorComponent, AstridComponent, TwoWayComponent, CardComponent, FilsComponent, PereComponent, Debrief1Component, DadComponent, SonComponent, PereOutputComponent, FilsOutputComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,35 @@
+<div>
+  <i
+    (click)="aligner('right')"
+    class="fa fa-align-right fa-2x"
+    aria-hidden="true"
+  ></i>
+  <i
+    (click)="aligner('left')"
+    class="fa fa-align-left fa-2x"
+    aria-hidden="true"
+  ></i>
+  <i
+    (click)="aligner('center')"
+    class="fa fa-align-center fa-2x"
+    aria-hidden="true"
+  ></i>
+  <i
+    (click)="aligner('justify')"
+    class="fa fa-align-justify fa-2x"
+    aria-hidden="true"
+  ></i>
+</div>
+<p
+  (mouseenter)="changeColor()"
+  [style.textAlign]="alignement">
+  debrief1 works! nous sommes entrain de débrifer la première séance de Angular
+  qui s'est déroulé le 30 Juin 2020.debrief1 works! nous sommes entrain de débrifer la première séance de Angular
+  qui s'est déroulé le 30 Juin 2020.
+</p>
+<input
+  [(ngModel)]="color"
+  type="text" class="form-control"
+>
+ma couleur est : {{color}}
+Interpolation : {{ pageTitle }}
