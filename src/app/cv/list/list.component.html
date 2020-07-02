@@ -1,4 +1,7 @@
 <ul class="list-group">
-  <app-item (selectPersonne)="forwardPersonne($event)" [personne]="personnes[0]"></app-item>
-  <app-item (selectPersonne)="forwardPersonne($event)" [personne]="personnes[1]"></app-item>
+  <app-item
+    *ngFor="let personneItem of personnes"
+    (selectPersonne)="forwardPersonne($event)"
+    [personne]="personneItem">
+  </app-item>
 </ul>

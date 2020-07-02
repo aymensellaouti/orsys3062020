@@ -1,4 +1,6 @@
-<div class="card-container">
+<div
+  *ngIf="personne"
+  class="card-container">
   <div class="card">
     <div class="front">
       <div class="cover">
@@ -77,4 +79,10 @@
     <!-- end back panel -->
   </div>
   <!-- end card -->
+</div>
+
+<div
+  *ngIf="!personne"
+  class="alert alert-primary">
+  Veuillez sélectionnez une personne dans la liste pour visualiser son Cv
 </div>

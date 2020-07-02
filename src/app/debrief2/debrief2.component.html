@@ -1,0 +1,25 @@
+<p
+  [ngStyle]="{
+    border: '2px green solid',
+    margin: marg + 'px',
+    padding: marg + 'px'
+  }"
+>
+  debrief2 works!
+</p>
+
+<input type="number" [(ngModel)]="marg" />
+
+<div
+  [ngClass]="{
+    om: false,
+    psg: false,
+    ol: true
+  }"
+>
+  Je vais tester ngClass
+</div>
+
+<p appDebriefD>
+  Je suis entrain de tester ma directive
+</p>

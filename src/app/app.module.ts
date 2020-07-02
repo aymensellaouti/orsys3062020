@@ -28,8 +28,35 @@ import { MiniWordComponent } from './directives/mini-word/mini-word.component';
 import { NgclassComponent } from './directives/ngclass/ngclass.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { RainbowDirective } from './directives/rainbow.directive';
+import { Debrief2Component } from './debrief2/debrief2.component';
+import { DebriefDDirective } from './directives/debrief-d.directive';
+import { DirstructComponent } from './directives/dirstruct/dirstruct.component';
+import { DirstructforComponent } from './directives/dirstructfor/dirstructfor.component';
+import { PipeExempleComponent } from './pipe/pipe-exemple/pipe-exemple.component';
+import { RandomPipe } from './pipe/random.pipe';
 @NgModule({
-  declarations: [AppComponent, FirstComponent, SecondComponent, ColorComponent, AstridComponent, TwoWayComponent, CardComponent, FilsComponent, PereComponent, Debrief1Component, DadComponent, SonComponent, PereOutputComponent, FilsOutputComponent, PereColorComponent, FilsColorComponent, CvComponent, ItemComponent, ListComponent, DetailComponent, NgsComponent, MiniWordComponent, NgclassComponent, HighlightDirective, RainbowDirective],
+  declarations: [
+    AppComponent,
+    FirstComponent,
+    SecondComponent,
+    ColorComponent,
+    AstridComponent,
+    TwoWayComponent,
+    CardComponent,
+    FilsComponent,
+    PereComponent,
+    Debrief1Component,
+    DadComponent,
+    SonComponent,
+    PereOutputComponent,
+    FilsOutputComponent,
+    PereColorComponent,
+    FilsColorComponent, CvComponent, ItemComponent, ListComponent, DetailComponent, NgsComponent, MiniWordComponent, NgclassComponent, HighlightDirective, RainbowDirective, Debrief2Component,
+    DebriefDDirective,
+    DirstructComponent,
+    DirstructforComponent,
+    PipeExempleComponent,
+    RandomPipe],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
