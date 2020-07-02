@@ -36,6 +36,7 @@ import { PipeExempleComponent } from './pipe/pipe-exemple/pipe-exemple.component
 import { RandomPipe } from './pipe/random.pipe';
 import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
 import { TodoComponent } from './todo/todo/todo.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { TodoComponent } from './todo/todo/todo.component';
     PipeExempleComponent,
     RandomPipe,
     DefaultImagePipe,
-    TodoComponent],
+    TodoComponent,
+    HeaderComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
