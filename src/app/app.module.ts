@@ -37,6 +37,8 @@ import { RandomPipe } from './pipe/random.pipe';
 import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
 import { TodoComponent } from './todo/todo/todo.component';
 import { HeaderComponent } from './header/header.component';
+import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
+import { DetailPersonneComponent } from './cv/detail-personne/detail-personne.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +75,9 @@ import { HeaderComponent } from './header/header.component';
     RandomPipe,
     DefaultImagePipe,
     TodoComponent,
-    HeaderComponent],
+    HeaderComponent,
+    RouterSimulatorComponent,
+    DetailPersonneComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Todo } from './../Model/todo';
 import { TodoService } from './../services/todo.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-todo',
@@ -12,7 +13,10 @@ export class TodoComponent implements OnInit {
   todos: Todo[];
   name: string = '';
   content: string = '';
-  constructor(private todoService: TodoService) {}
+  constructor(
+    private todoService: TodoService,
+    private router: Router
+    ) {}
 
   ngOnInit(): void {
     //Donne moi mes todos
@@ -25,5 +29,12 @@ export class TodoComponent implements OnInit {
   }
   deleteTodo(todo: Todo) {
     this.todoService.deleteTodo(todo);
+  }
+  naviguer() {
+    if (this.todos.length > 3 ) {
+      this.router.navigate(['color']);
+    } else {
+      this.router.navigate(['']);
+    }
   }
 }
