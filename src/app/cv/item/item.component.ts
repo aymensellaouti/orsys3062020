@@ -17,4 +17,5 @@ export class ItemComponent implements OnInit {
   sendSelectedPersonne() {
     this.selectPersonne.emit(this.personne);
   }
+
 }

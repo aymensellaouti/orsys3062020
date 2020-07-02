@@ -34,6 +34,9 @@ import { DirstructComponent } from './directives/dirstruct/dirstruct.component';
 import { DirstructforComponent } from './directives/dirstructfor/dirstructfor.component';
 import { PipeExempleComponent } from './pipe/pipe-exemple/pipe-exemple.component';
 import { RandomPipe } from './pipe/random.pipe';
+import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
+import { TodoComponent } from './todo/todo/todo.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,7 +59,9 @@ import { RandomPipe } from './pipe/random.pipe';
     DirstructComponent,
     DirstructforComponent,
     PipeExempleComponent,
-    RandomPipe],
+    RandomPipe,
+    DefaultImagePipe,
+    TodoComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Personne } from './../Model/personne';
+import { LoggerService } from './../../services/logger.service';
 
 @Component({
   selector: 'app-cv',
@@ -8,9 +9,12 @@ import { Personne } from './../Model/personne';
 })
 export class CvComponent implements OnInit {
   selectedPersonne: Personne = null;
-  constructor() { }
+  constructor(
+    private loggerService: LoggerService
+  ) { }
 
   ngOnInit(): void {
+    this.loggerService.logger('Je suis le cv Component');
   }
   selectPersonne(personne: Personne) {
      this.selectedPersonne = personne;

@@ -17,6 +17,15 @@ export class ListComponent implements OnInit {
       new Personne(1, 'sellaouti', 'aymen', 37, 123456, 'Teacher', 'as.jpg'),
       new Personne(2, 'zidan', 'zizou', 47, 123456, 'Coach', 'zizou.jpeg'),
       new Personne(2, 'zidan', 'zizou', 47, 123456, 'Coach', ''),
+      new Personne(
+        2,
+        'zidan',
+        'zizou',
+        47,
+        123456,
+        'Coach',
+        '                        '
+      ),
     ];
   }
 
