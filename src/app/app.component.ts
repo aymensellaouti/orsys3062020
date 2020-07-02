@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LoggerService } from './services/logger.service';
+import { TodoService } from './todo/services/todo.service';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,14 @@ import { LoggerService } from './services/logger.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  constructor(private loggerService: LoggerService) {}
+  constructor(
+    private loggerService: LoggerService,
+    private todoService: TodoService
+  ) {}
   ngOnInit(): void {
     this.loggerService.logger('Je suis app Component');
   }
-  name = 'aymen';
-  title = 'orsysAngular2962020';
+  loggerTodo() {
+    this.todoService.loggerTodos();
+  }
 }
