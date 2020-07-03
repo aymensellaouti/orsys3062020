@@ -8,7 +8,7 @@ import { FirstComponent } from './introduction/first/first.component';
 import { ColorComponent } from './component binding/color/color.component';
 import { AstridComponent } from './component binding/astrid/astrid.component';
 import { TwoWayComponent } from './component binding/two-way/two-way.component';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { CardComponent } from './component binding/card/card.component';
 import { FilsComponent } from './interactions entre composants/fils/fils.component';
 import { PereComponent } from './interactions entre composants/pere/pere.component';
@@ -43,6 +43,10 @@ import { AdminComponent } from './admin/admin.component';
 import { NF404Component } from './nf404/nf404.component';
 import { TestFormComponent } from './formulaires/test-form/test-form.component';
 import { LoginComponent } from './login/login.component';
+import { ObservaleComponent } from './observables/observale/observale.component';
+
+import {HttpClientModule} from "@angular/common/http";
+import { HttpComponent } from './http/http.component';
 
 @NgModule({
   declarations: [
@@ -85,8 +89,16 @@ import { LoginComponent } from './login/login.component';
     AdminComponent,
     NF404Component,
     TestFormComponent,
-    LoginComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+    LoginComponent,
+    ObservaleComponent,
+    HttpComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

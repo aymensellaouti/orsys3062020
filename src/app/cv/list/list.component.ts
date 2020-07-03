@@ -9,14 +9,21 @@ import { CvService } from './../services/cv.service';
 })
 export class ListComponent implements OnInit {
   personnes: Personne[];
-  constructor(
-    private cvService: CvService
-  ) {}
+  constructor(private cvService: CvService) {}
   //Je crée un événement
   @Output() forwardSelectedPersonne = new EventEmitter();
 
   ngOnInit(): void {
-    this.personnes = this.cvService.getPersonnes();
+    this.cvService.getPersonnes().subscribe(
+      (personnes) => {
+        this.personnes = personnes;
+      },
+      (erreur) => {
+        this.personnes = this.cvService.getFakePersonnes();
+        alert('Problème de connexion, les données affichées sont Fake!');
+        console.log(erreur);
+      }
+    );
   }
 
   forwardPersonne(personne: Personne) {

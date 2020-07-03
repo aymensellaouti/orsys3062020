@@ -1,0 +1,13 @@
+<p>http works!</p>
+<div
+  *ngIf="!posts.length"
+  class="alert alert-danger">
+  Loading...
+</div>
+<ol class="list-group">
+  <li
+    *ngFor= "let post of posts"
+    class="list-group-item">
+    {{post.body}}
+  </li>
+</ol>

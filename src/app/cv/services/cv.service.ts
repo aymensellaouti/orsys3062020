@@ -1,19 +1,28 @@
 import { Injectable } from '@angular/core';
 import { Personne } from './../Model/personne';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+const API_LINK = 'https://immense-citadel-91115.herokuapp.com/api/personnes';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CvService {
   private personnes: Personne[];
-  constructor() {
+  constructor(
+    private http: HttpClient
+  ) {
     this.personnes = [
       new Personne(1, 'sellaouti', 'aymen', 37, 123456, 'Teacher', 'as.jpg'),
       new Personne(2, 'zidan', 'zizou', 47, 123456, 'Coach', 'zizou.jpeg'),
     ];
   }
-  getPersonnes(): Personne[] {
+  getFakePersonnes(): Personne[] {
     return this.personnes;
+  }
+  getPersonnes(): Observable<Personne[]> {
+    return this.http.get<Personne[]>(API_LINK);
   }
   getPersonneById(id: number): Personne {
     return this.personnes.find((personne) => personne.id === id);
