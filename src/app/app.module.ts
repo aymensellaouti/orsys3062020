@@ -39,6 +39,8 @@ import { TodoComponent } from './todo/todo/todo.component';
 import { HeaderComponent } from './header/header.component';
 import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
 import { DetailPersonneComponent } from './cv/detail-personne/detail-personne.component';
+import { AdminComponent } from './admin/admin.component';
+import { NF404Component } from './nf404/nf404.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +79,9 @@ import { DetailPersonneComponent } from './cv/detail-personne/detail-personne.co
     TodoComponent,
     HeaderComponent,
     RouterSimulatorComponent,
-    DetailPersonneComponent],
+    DetailPersonneComponent,
+    AdminComponent,
+    NF404Component],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
