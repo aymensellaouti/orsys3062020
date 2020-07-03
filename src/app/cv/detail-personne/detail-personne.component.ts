@@ -28,4 +28,11 @@ export class DetailPersonneComponent implements OnInit {
       }
     });
   }
+  deletePersonne() {
+    if(this.cvService.deletePersonne(this.personne)) {
+      this.router.navigate(['']);
+    } else {
+      alert('Problème de suppression');
+    }
+  }
 }

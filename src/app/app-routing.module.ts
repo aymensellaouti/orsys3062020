@@ -8,6 +8,7 @@ import { AdminComponent } from './admin/admin.component';
 import { FirstComponent } from './introduction/first/first.component';
 import { SecondComponent } from './introduction/second/second.component';
 import { NF404Component } from './nf404/nf404.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'cv', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'color', component: ColorComponent },
   // aymen.tn/todo
   { path: 'todo', component: TodoComponent },
+  { path: 'login', component: LoginComponent },
   // aymen.tn
   {
     path: 'cv',

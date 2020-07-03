@@ -18,4 +18,13 @@ export class CvService {
   getPersonneById(id: number): Personne {
     return this.personnes.find((personne) => personne.id === id);
   }
+  deletePersonne(personne: Personne) {
+    const personneIndex = this.personnes.indexOf(personne);
+    if(personneIndex === -1 ) {
+      return false;
+    } else {
+      this.personnes.splice(personneIndex, 1);
+      return true;
+    }
+  }
 }
