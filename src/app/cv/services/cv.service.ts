@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Personne } from './../Model/personne';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 const API_LINK = 'https://immense-citadel-91115.herokuapp.com/api/personnes';
@@ -29,10 +29,11 @@ export class CvService {
     return this.http.get<Personne>(API_LINK + `/${id}`);
   }
   deletePersonneById(id): Observable<any> {
-    const token = localStorage.getItem('token');
+/*     const token = localStorage.getItem('token');
     //Il faut ajouter le token pour identifier le user
-    const params = new HttpParams().set('access_token', token);
-    return this.http.delete<any>(API_LINK + `/${id}`, { params });
+    //const params = new HttpParams().set('access_token', token);
+    const headers = new HttpHeaders().set('Authorization', token); */
+    return this.http.delete<any>(API_LINK + `/${id}`);
   }
 
   deleteFakePersonne(personne: Personne) {

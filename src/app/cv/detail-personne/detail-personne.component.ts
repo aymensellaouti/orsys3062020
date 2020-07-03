@@ -37,8 +37,9 @@ export class DetailPersonneComponent implements OnInit {
         console.log(respone);
         this.router.navigate(['']);
       },
-      (erreur) => console.log(erreur)
-    )
+      (erreur) => console.log(erreur),
+      () => {console.log('end');}
+    );
     /* if(this.cvService.deletePersonne(this.personne)) {
       this.router.navigate(['']);
     } else {
